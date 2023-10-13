@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="remainingDiv" id="remainingDiv" >
+        <h1>Etkinliğe Ne Kadar Var ?</h1>
+        <form class="form" id="remainingForm">
+          <label>Tarih Seçiniz</label>
+          <input  type="date" id="date" class="date" name="date"  />
+          <button type="submit" class="btn">Hesapla</button>
+        </form>
+      </div>
+      <div class="timeDiv" id="timeDiv" hidden>
+        <h1>Kalan Süre</h1>
+        <ul>
+            <li><span>10</span>Gün</li>
+            <li><span>10</span>Saat</li>
+            <li><span>10</span>Dakika</li>
+            <li><span>10</span>Saniye</li>
+        </ul>
+        <button id="resetButton">Sıfırla</button>
+      </div>
+      <div class="compleate" id="compleate" hidden>
+        <h1>Vakit Geldi</h1>
+        <button id="compleateBtn">Yeniden Hesapla</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
